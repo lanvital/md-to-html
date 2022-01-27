@@ -28,6 +28,28 @@ body{
     color: var(--text-color);
     background-color: #FFFFFF;
 }
+
+/* 补补队长提示 */
+.captain-reminder{
+    position: relative;
+    width: 100%;
+}
+.captain-reminder p img{
+    width: 100%;
+}
+.captain-reminder h4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 90px);
+    height: calc(100% - 8px);
+    padding-left: 50px;
+    padding-right: 40px;
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    line-height: 20px;
+}
 /* 区块的标题 */
 .block-title{
     font-size: 18px;

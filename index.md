@@ -1,3 +1,9 @@
+<!-- 补补队长提示 -->
+::: {.captain-reminder}
+![avatar](https://huolibubu-1308276565.cos.ap-shanghai.myqcloud.com/static/upload/images/wechat-mock/220127-m12.png)
+#### 由海洋深层水和32种天然海洋提取物组成的独特面膜成份，补⽔效果十分优秀哦～
+:::
+
 <!-- 标题 -->
 ::: {.block-title}
 使用说明
