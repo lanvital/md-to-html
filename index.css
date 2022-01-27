@@ -228,19 +228,25 @@ body{
     padding: 8px 10px 8px 30px;
     background-color: #FBFBFB;
     border: 1px solid var(--primary-color);
+    border-left: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    max-width: 200px;
+    max-width: 260px;
     margin-bottom: 20px;
     margin-right: auto;
+    display: inline-block;
 }
-.qa-list p{
+.qa-list ul{
+    display: flex;
+}
+.qa-list li{
     padding: 8px 30px 8px 10px;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    max-width: 200px;
+    max-width: 260px;
     margin-bottom: 30px;
     margin-left: auto;
+    /* display: inline-block; */
 }
