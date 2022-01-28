@@ -54,6 +54,9 @@ body{
 }
 
 /* block的标题 */
+.block{
+    position: relative;
+}
 .block h2{
     font-size: 3.6rem;
     line-height: 5.2rem;
