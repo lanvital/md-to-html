@@ -3,14 +3,19 @@
     --primary-text-color: #FFFFFF;
     --text-color: #666363;
 }
+html{
+    font-size: 62.5%;
+}
 @font-face {
     font-family: 'Alibaba Sans';
     src: url("font/Alibaba-PuHuiTi-Regular.ttf");
 }
-
 p,h1,h2,h3,h4,h5{
     margin: 0;
     font-weight: normal;
+}
+em{
+    font-style: normal;
 }
 ul{
     margin: 0;
@@ -24,229 +29,235 @@ body{
 }
 
 .page{
-    width: 375px;
+    width: 75rem;
     color: var(--text-color);
     background-color: #FFFFFF;
 }
 
 /* 补补队长提示 */
-.captain-reminder{
+.reminder{
     position: relative;
     width: 100%;
+    height: 24rem;
+    background-image: url('https://huolibubu-1308276565.cos.ap-shanghai.myqcloud.com/static/upload/images/wechat-mock/220127-m12.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-.captain-reminder p img{
-    width: 100%;
-}
-.captain-reminder h4{
+.reminder p{
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 90px);
-    height: calc(100% - 8px);
-    padding-left: 50px;
-    padding-right: 40px;
+    width: calc(100% - 18rem);
+    height: calc(100% - 1.2rem);
+    padding-left: 10rem;
+    padding-right: 8rem;
     align-items: center;
-    font-size: 14px;
+    font-size: 2.8rem;
     display: flex;
-    line-height: 20px;
+    line-height: 4rem;
 }
-/* 区块的标题 */
-.block-title{
-    font-size: 18px;
-    line-height: 26px;
+
+/* block的标题 */
+.block h2{
+    font-size: 3.6rem;
+    line-height: 5.2rem;
     width: 100%;
-    height: 82px;
+    height: 16.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.block-title p{
-    padding: 2px 20px;
-    border-radius: 8px;
+.block h2 code{
+    padding: 0.4rem 4rem;
+    border-radius: 1.6rem;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
 }
-/* 文本行（左侧标题+右侧内容） */
-.list-view{
-    padding: 0 20px;
-    width: calc(100% - 40px);
+
+/* 列表文本，左侧标题，右侧描述 */
+.list-view ul{
+    padding: 0 4rem;
+    width: calc(100% - 8rem);
+}
+.list-view ul li{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
-.list-view h4{
-    font-size: 14px;
+.list-view ul li code{
+    font-size: 2.8rem;
     font-weight: normal;
-    line-height: 18px;
-    width: 76px;
-    padding: 6px;
-    border-radius: 8px;
+    line-height: 3.6rem;
+    width: 15.2rem;
+    padding: 1.2rem;
+    border-radius: 1.6rem;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
+}
+.list-view ul li em{
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    width: calc(100% - 19.6rem);
+    padding: 1.2rem 0 1.2rem 2rem;
+    margin-bottom: 4rem;
 }
 .list-view p{
-    font-size: 14px;
-    line-height: 18px;
-    width: calc(100% - 98px);
-    padding: 6px 0 6px 10px;
-    margin-bottom: 20px;
-}
-/* 图片（整行） */
-.block-row-img{
-    position: relative;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-.block-row-img p img{
-    width: 100%;
-}
-/* 图片（整行） */
-.block-middle-img{
-    position: relative;
-    width: 100%;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-/* 图片内嵌文本 */
-.img-inner{
+/* 图片卡片 */
+.image-card{
+    position: relative;
+}
+.image-card ul{
     position: absolute;
-    width: calc(100% - 80px);
-    padding: 5px 10px 5px 30px;
+    width: calc(100% - 16rem);
+    padding: 1rem 2rem 1rem 6rem;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 3.6rem;
+    line-height: 5.2rem;
 }
-.left-bottom{
-    bottom: 40px;
+.image-card.left-bottom ul{
+    bottom: 8rem;
     left: 0;
 }
-.right-bottom{
-    bottom: 40px;
+.image-card.left-top ul{
+    top: 8rem;
+    left: 0;
+}
+.image-card.right-bottom ul{
+    bottom: 8rem;
     right: 0;
 }
-.left-top{
-    top: 40px;
-    left: 0;
-}
-.right-top{
-    top: 40px;
+.image-card.right-top ul{
+    top: 8rem;
     right: 0;
 }
 
-/* 文本行（带勾选图标） */
-.check-view{
-    padding: 0 20px;
-    width: calc(100% - 40px);
+/* 列表文本，带checkbox */
+.check-list ul{
+    padding: 0 4rem;
+    width: calc(100% - 8rem);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
-.check-view li{
-    font-size: 14px;
-    line-height: 20px;
-    padding-bottom: 20px;
-    display: flex;
-}
-.check-view li img{
-    height: 12px;
-    width: 16px;
+.check-list ul li::before{
+    content: '';
+    min-width: 4rem;
+    height: 4rem;
+    background-image: url('./icon/check.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-color: var(--primary-color);
-    padding: 4px 2px;
-    border-radius: 6px;
-    margin-right: 10px;
+    border-radius: 1.2rem;
+    margin-right: 2rem;
 }
-
+.check-list ul li{
+    font-size: 2.8rem;
+    line-height: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+}
 /* 图片（栅格，4格） */
-.block-grid-img-4{
-    margin-top: 20px;
+.image-grid-4 p{
+    margin-top: 4rem;
     display: flex;
 }
-.block-grid-img-4 p{
-    display: flex;
+.image-grid-4 p img{
+    width: 18rem;
+    margin-right: 1rem;
 }
-.block-grid-img-4 p img{
-    width: 90px;
-    margin-right: 5px;
-}
-.block-grid-img-4 p img::last-child{
+.image-grid-4 p img:last-child{
     margin-right: 0;
 }
-
 
 /* 图片（栅格，3格） */
-.block-grid-img-3{
-    margin-top: 20px;
+.image-grid-3 p{
+    margin-top: 4rem;
     display: flex;
 }
-.block-grid-img-3 p{
-    display: flex;
+.image-grid-3 p img{
+    width: 23.8rem;
+    margin-right: 1.8rem;
 }
-.block-grid-img-3 p img{
-    width: 119px;
-    margin-right: 9px;
-}
-.block-grid-img-3 p img::last-child{
+.image-grid-3 p img:last-child{
     margin-right: 0;
 }
 
-/* 左侧一张图片，右侧文本 */
-.list-with-img{
-    display: flex;
-    margin-bottom: 30px;
+/* 带图片的列表 */
+.image-list .content-list{
+    width: 100%;
+    display: inline-block;
 }
-.list-with-img p img{
-    width: 130px;
+.image-list .content-list p{
+    width: 26rem;
+    float: left;
 }
-.list-with-img .content-list{
-    width: calc(100% - 160);
-    padding: 0 15px;
+.image-list .content-list p img{
+    width: 100%;
 }
-.list-with-img .content-list h4{
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 20px;
+.image-list .content-list h3{
+    width: calc(100% - 32rem);
+    padding: 0 3rem;
+    font-size: 2.8rem;
+    line-height: 4.4rem;
+    margin-bottom: 4rem;
+    float: left;
 }
-.list-with-img .content-list li{
-    font-size: 14px;
-    line-height: 22px;
+.image-list .content-list ul{
+    font-size: 2.8rem;
+    line-height: 4.4rem;
+    width: calc(100% - 32rem);
+    padding: 0 3rem;
+    float: left;
+}
+.image-list p:last-child{
+    width: 100%;
+    margin-top: 4rem;
 }
 
-/* 左侧提问，右侧回答 */
-.qa-list{
-    font-size: 14px;
-    line-height: 20px;
-    padding-bottom: 30px;
+.image-list p:last-child img{
+    width: 100%;
 }
-.qa-list h4{
-    padding: 8px 10px 8px 30px;
+
+
+/* QA列表，左侧提问，右侧回答 */
+.qa-list ul{
+    font-size: 2.8rem;
+    line-height: 4rem;
+    padding-bottom: 6rem;
+}
+.qa-list ul li code{
+    padding: 1.6rem 2rem 1.6rem 6rem;
     background-color: #FBFBFB;
-    border: 1px solid var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
     border-left: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    max-width: 260px;
-    margin-bottom: 20px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 52rem;
+    margin-bottom: 4rem;
     margin-right: auto;
     display: inline-block;
 }
-.qa-list ul{
-    display: flex;
-}
-.qa-list li{
-    padding: 8px 30px 8px 10px;
+
+.qa-list ul li em{
+    padding: 1.6rem 4rem 1.6rem 2rem;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    max-width: 260px;
-    margin-bottom: 30px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    max-width: 52rem;
+    margin-bottom: 6rem;
     margin-left: auto;
-    /* display: inline-block; */
+    display: block;
 }
