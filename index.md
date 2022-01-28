@@ -56,7 +56,6 @@
 <!-- 专家背景block -->
 ::: {.block .image-list}
 ## `专家背景`
-::: {.content-list}
 ![avatar](https://huolibubu-1308276565.cos.ap-shanghai.myqcloud.com/static/upload/images/wechat-mock/220127-m6.png)
 ### 代表院长 崔 埈 溶
 - 首尔大学毕业
@@ -67,7 +66,6 @@
 - DN生物酶 经营者
 - 成均馆大学 医科大学 外来教授
 - EURO整形外科和皮肤科代表院长
-:::
 
 ![avatar](https://huolibubu-1308276565.cos.ap-shanghai.myqcloud.com/static/upload/images/wechat-mock/220127-m7.png)
 :::
