@@ -1,4 +1,8 @@
 :root{
     /* 主题色 */
-    --primary-color: #70ADA5;
+    --primary-color: #000000;
+    /* 主题色快内的文字颜色 */
+    --primary-text-color: #FFFFFF;
+    /* 文字颜色 */
+    --text-color: #666363;
 }
