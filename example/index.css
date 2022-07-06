@@ -54,6 +54,9 @@ body{
 }
 
 /* block的标题 */
+.block{
+    position: relative;
+}
 .block h2{
     font-size: 3.6rem;
     line-height: 5.2rem;
@@ -105,6 +108,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.list-view p img{
+    max-width: 100%;
 }
 
 /* 图片卡片 */
@@ -226,7 +232,11 @@ body{
 .qa-list ul{
     font-size: 2.8rem;
     line-height: 4rem;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
+}
+.qa-list ul li{
+    display: flex;
+    flex-direction: column;
 }
 .qa-list ul li code{
     padding: 1.6rem 2rem 1.6rem 6rem;
@@ -236,9 +246,9 @@ body{
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     max-width: 52rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
     margin-right: auto;
-    display: inline-block;
 }
 
 .qa-list ul li em{
@@ -248,7 +258,6 @@ body{
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     max-width: 52rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     margin-left: auto;
-    display: block;
 }
